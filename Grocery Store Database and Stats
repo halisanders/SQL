@@ -1,0 +1,32 @@
+--create a grocery store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, aisle INTEGER, quantity INTEGER, price INTEGER);
+
+--inserting information into table
+
+INSERT INTO store Values (1, "Bananas", 21, 30, 1)
+,(2, "Bread", 3, 12, 4)
+,(3, "Grapes", 21, 10, 1)
+,(4, "Soy Sauce", 8, 20, 5)
+,(5, "Ground Beef", 5, 8, 9)
+,(6, "Chicken Thighs", 5, 12, 7)
+,(7, "Milk", 2, 15, 3)
+,(8, "Eggs", 2, 12, 4)
+,(9, "Tortillas", 3, 16, 5)
+,(10, "Sour Cream", 2, 9, 4)
+,(11, "Chips", 6, 23, 2)
+,(12, "Bagels", 3, 6, 5)
+,(13, "Frozen Waffles", 13, 8, 6)
+,(14, "Frozen Fruit", 13, 11, 5)
+,(15, "Ice Cream", 14, 7, 9);
+
+--display information from store ordered by price
+
+select * from store 
+order by price;
+
+--get the number of items in an aisle
+
+select SUM(quantity) "number of items in aisle 2" 
+from store 
+where aisle ='2';
