@@ -1,0 +1,38 @@
+# Just a fun little exercise using JOIN
+
+/* Create table about the people and what they do here */
+CREATE TABLE famous_people (id INTEGER PRIMARY KEY,
+fullname TEXT,
+email TEXT);
+
+INSERT INTO famous_people (fullname, email) 
+VALUES ("Brad Pitt", "bradpitt@gmail.com"),
+("Tom Hardy", "thardy@gmail.com"),
+("Katy Perry", "kperry@gmail.com"),
+("Britney Spears", "bspears@gmail.com"),
+("Morgan Wallen", "mwallen@gmail.com");
+
+CREATE TABLE celebrity_jobs (id INTEGER PRIMARY KEY,
+celebrityid TEXT,
+occupation TEXT,
+movies TEXT,
+songs TEXT);
+
+INSERT INTO celebrity_jobs (celebrityid, occupation, movies, songs) 
+VALUES (1, "Actor", "Fury", NULL),
+(2, "Actor", "Bronson", NULL),
+(3, "Singer", NULL, "Firework"),
+(4, "Singer", NULL, "Toxic"),
+(5, "Singer", NULL, "Whiskey Glasses");
+
+/* Celebrity and their occupation */
+SELECT famous_people.fullname, celebrity_jobs.occupation
+FROM famous_people
+JOIN celebrity_jobs
+ON famous_people.id = celebrity_jobs.celebrityid;
+
+/* What the celebrity is known for */
+SELECT famous_people.fullname, celebrity_jobs.movies, celebrity_jobs.songs
+FROM famous_people
+JOIN celebrity_jobs
+ON famous_people.id = celebrity_jobs.celebrityid;
