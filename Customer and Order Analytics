@@ -1,0 +1,127 @@
+/* Sales from an online furniture store */
+CREATE TABLE sales(
+  ID INTEGER  NOT NULL PRIMARY KEY
+, transaction_date TEXT
+, product TEXT
+, price INTEGER
+, payment_type TEXT
+, name TEXT
+, city TEXT
+, state TEXT
+, country TEXT
+, account_created TEXT
+, last_login TEXT
+, latitude REAL
+, longitude REAL
+);
+
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09','Chair',1200,'Mastercard','Carolina','Basildon','England','United Kingdom','1/2/09','1/2/09',51.5,-1.1166667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09','Chair',1200,'Visa','Betina','Parkville','MO','United states','1/2/09','1/2/09',39.195,-94.68194);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09','Chair',1200,'Mastercard','Federica e Andrea','Astoria','OR','United states','1/1/09','1/3/09',46.18806,-123.83);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/3/09','Chair',1200,'Visa','Gouya','Echuca','Victoria','Australia','9/25/05','1/3/09',-36.1333333,144.75);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/4/09','Couch',3600,'Visa','Gerd W','Cahaba Heights','AL','United states','11/15/08','1/4/09',33.52056,-86.8025);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/4/09','Chair',1200,'Visa','Laurence','Mickleton','NJ','United states','9/24/08','1/4/09',39.79,-75.23806);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/4/09','Chair',1200,'Mastercard','Fleur','Peoria','IL','United states','1/3/09','1/4/09',40.69361,-89.58889);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09','Chair',1200,'Mastercard','adam','Martin','TN','United states','1/2/09','1/4/09',36.34333,-88.85028);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/4/09','Chair',1200,'Mastercard','Renee Elisabeth','Tel Aviv','Tel Aviv','Israel','1/4/09','1/4/09',32.0666667,34.7666667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/4/09','Chair',1200,'Visa','Aidan','Chatou','Ile-de-France','France','6/3/08','1/5/09',48.8833333,2.15);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/5/09','Chair',1200,'Diners','Stacy','New York','NY','United states','1/5/09','1/5/09',40.71417,-74.00639);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/5/09','Chair',1200,'Amex','Heidi','Eindhoven','Noord-Brabant','Netherlands','1/5/09','1/5/09',51.45,5.4666667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09','Chair',1200,'Mastercard','Sean','Shavano Park','TX','United states','1/2/09','1/5/09',29.42389,-98.49333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/5/09','Chair',1200,'Visa','Georgia','Eagle','ID','United states','11/11/08','1/5/09',43.69556,-116.35306);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09','Chair',1200,'Visa','Richard','Riverside','NJ','United states','12/9/08','1/5/09',40.03222,-74.95778);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/4/09','Chair',1200,'Diners','Leanne','Julianstown','Meath','Ireland','1/4/09','1/5/09',53.6772222,-6.3191667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/5/09','Chair',1200,'Visa','Janet','Ottawa','Ontario','Canada','1/5/09','1/5/09',45.4166667,-75.7);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09','Chair',1200,'Diners','barbara','Hyderabad','Andhra Pradesh','India','1/6/09','1/6/09',17.3833333,78.4666667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09','Couch',3600,'Visa','Sabine','London','England','United Kingdom','1/6/09','1/6/09',51.52721,0.14559);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09','Chair',1200,'Diners','Hani','Salt Lake city','UT','United states','12/30/08','1/6/09',40.76083,-111.89028);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09','Chair',1200,'Visa','Jeremy','Manchester','England','United Kingdom','1/6/09','1/6/09',53.5,-2.2166667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/1/09','Chair',1200,'Diners','Janis','Ballynora','Cork','Ireland','12/10/07','1/7/09',51.8630556,-8.58);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/5/09','Chair',1200,'Mastercard','Nicola','Roodepoort','Gauteng','South Africa','1/5/09','1/7/09',-26.1666667,27.8666667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09','Chair',1200,'Visa','asuman','Chula Vista','CA','United states','1/6/09','1/7/09',32.64,-117.08333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09','Chair',1200,'Mastercard','Lena','Kuopio','Ita-Suomen Laani','Finland','12/31/08','1/7/09',62.9,27.6833333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/1/09','Chair',1200,'Visa','Lisa','Sugar Land','TX','United states','1/1/09','1/7/09',29.61944,-95.63472);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/7/09','Chair',1200,'Diners','Bryan Kerrene','New York','NY','United states','1/7/09','1/7/09',40.71417,-74.00639);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09','Chair',1200,'Visa','chris','London','England','United Kingdom','1/3/08','1/7/09',51.52721,0.14559);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/1/09','Chair',1200,'Visa','Maxine','Morton','IL','United states','10/24/08','1/7/09',40.61278,-89.45917);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/8/09','Chair',1200,'Visa','Family','Los Gatos','CA','United states','1/8/09','1/8/09',37.22667,-121.97361);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/8/09','Chair',1200,'Mastercard','Katherine','New York','NY','United states','1/8/09','1/8/09',40.71417,-74.00639);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/8/09','Bed',7500,'Mastercard','Linda','Miami','FL','United states','1/8/09','1/8/09',25.77389,-80.19389);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/8/09','Chair',1200,'Mastercard','SYLVIA','Vesenaz','Geneve','Switzerland','11/28/07','1/8/09',46.2333333,6.2);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/3/09','Chair',1200,'Diners','Sheila','Brooklyn','NY','United states','1/3/09','1/8/09',40.65,-73.95);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/5/09','Chair',1200,'Mastercard','Stephanie','Badhoevedorp','Noord-Holland','Netherlands','1/5/09','1/8/09',52.3333333,4.7833333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09','Chair',1200,'Amex','Kelly','Reston','VA','United states','1/6/09','1/8/09',38.96861,-77.34139);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/5/09','Couch',3600,'Visa','James','Burpengary','Queensland','Australia','12/10/08','1/8/09',-27.1666667,152.95);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/8/09','Chair',1200,'Visa','jennifer','Phoenix','AZ','United states','1/8/09','1/8/09',33.44833,-112.07333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/9/09','Chair',1200,'Mastercard','Anneli','Houston','TX','United states','1/9/09','1/9/09',29.76306,-95.36306);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09','Bed',7500,'Amex','Ritz','Pittsfield','VT','United states','1/6/09','1/9/09',43.77222,-72.81333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09','Couch',3600,'Amex','Sylvia','Pittsfield','VT','United states','1/6/09','1/9/09',43.77222,-72.81333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/7/09','Chair',1200,'Mastercard','Marie','Ball Ground','GA','United states','1/7/09','1/9/09',34.33806,-84.37667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/3/09','Chair',1200,'Visa','Mehmet Fatih','Helsingor','Frederiksborg','Denmark','1/3/09','1/9/09',56.0333333,12.6166667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/7/09','Couch',3600,'Visa','Anabela','Flossmoor','IL','United states','1/5/09','1/9/09',41.54278,-87.68472);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/7/09','Chair',1200,'Amex','Nicole','Houston','TX','United states','1/7/09','1/9/09',29.76306,-95.36306);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/3/09','Couch',3600,'Visa','Christiane','Delray Beach','FL','United states','1/3/09','1/10/09',26.46111,-80.07306);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/9/09','Chair',1200,'Mastercard','Sari','Newbury','England','United Kingdom','1/9/09','1/10/09',51.4,-1.3166667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/3/09','Chair',1200,'Mastercard','simone','Kobenhavn','Kobenhavn','Denmark','10/31/08','1/10/09',55.6666667,12.5833333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/10/09','Couch',3600,'Amex','Vanessa','Sandy Springs','GA','United states','2/7/07','1/10/09',33.92417,-84.37861);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/10/09','Chair',1200,'Diners','Anupam','Kinsaley','Dublin','Ireland','1/9/09','1/10/09',53.4247222,-6.1758333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/10/09','Chair',1200,'Visa','Karina','Fort Lauderdale','FL','United states','7/1/08','1/10/09',26.12194,-80.14361);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09','Chair',1200,'Mastercard','Frank','Melbourne','Victoria','Australia','1/2/09','1/10/09',-37.8166667,144.9666667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/10/09','Chair',1200,'Visa','Angela','Ankeny','IA','United states','1/8/09','1/10/09',41.72972,-93.60556);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/7/09','Chair',1200,'Visa','Darren','Pittsboro','NC','United states','1/7/09','1/10/09',35.72,-79.1775);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/1/09','Bed',7500,'Mastercard','Nikki','New Rochelle','NY','United states','1/1/09','1/10/09',40.91139,-73.78278);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/11/09','Chair',1200,'Visa','chris','Gold Coast','Queensland','Australia','1/11/09','1/11/09',-28,153.4333333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/11/09','Chair',1200,'Visa','Stephanie','Brussels','Brussels (Bruxelles)','Belgium','1/11/09','1/11/09',50.8333333,4.3333333);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/10/09','Chair',1200,'Visa','Anushka','Maple Ridge District Municipality','British Columbia','Canada','1/10/09','1/11/09',49.25,-122.5);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/7/09','Chair',1200,'Mastercard','June','Beachwood','OH','United states','2/23/06','1/11/09',41.46444,-81.50889);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/4/09','Couch',3600,'Diners','Baybars','Prince Albert','Saskatchewan','Canada','1/3/09','1/11/09',53.2,-105.75);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/5/09','Chair',1200,'Mastercard','Bonnie','Saltsjobaden','Stockholm','Sweden','1/4/09','1/12/09',59.2833333,18.3);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09','Chair',1200,'Visa','Cindy','Kemble','England','United Kingdom','12/30/08','1/12/09',51.6766667,-2.0180556);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/12/09','Chair',1200,'Mastercard','chrissy','W Lebanon','NH','United states','1/12/09','1/12/09',43.64917,-72.31083);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/4/09','Chair',1200,'Mastercard','Tamar','Headley','England','United Kingdom','11/29/07','1/12/09',51.1166667,-0.8166667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/7/09','Couch',3600,'Mastercard','Deirdre','Lausanne','Vaud','Switzerland','12/1/08','1/12/09',46.5333333,6.6666667);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/12/09','Chair',1200,'Mastercard','Bernadett','Southampton','England','United Kingdom','1/12/09','1/12/09',50.9,-1.4);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/8/09','Bed',7500,'Visa','Dottie','Woodsboro','MD','United states','1/8/09','1/12/09',39.53306,-77.315);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/11/09','Chair',1200,'Visa','Stefan','Stavanger','Rogaland','Norway','1/11/09','1/12/09',58.9666667,5.75);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/7/09','Chair',1200,'Visa','Gina','Red Deer','Alberta','Canada','11/23/08','1/12/09',52.2666667,-113.8);
+INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/2/09','Chair',1200,'Diners','Lynne','Memphis','TN','United states','1/2/09','1/12/09',35.14944,-90.04889);
+
+
+/* Total number of Domestic and International orders in January */
+SELECT COUNT(*) as "Num of Orders",
+    CASE
+        WHEN country = "United states" THEN "Domestic"
+        Else "International"
+    END as sales_location
+FROM sales 
+GROUP BY sales_location;
+
+/* Total revenue for each product sold on January 8th */
+SELECT SUM(price) as revenue, product 
+FROM sales
+WHERE transaction_date like '%1/8/09%'
+GROUP BY product;
+
+/* Total number of Domestic and/or International orders on specific day in January */
+SELECT COUNT(*) as "Num of Orders",
+    CASE
+        WHEN country = "United states" THEN "Domestic"
+        Else "International"
+    END as sales_location
+FROM sales 
+WHERE transaction_date = '1/8/09'
+GROUP BY sales_location;
+
+/* Customer login activity */
+SELECT name,
+    CASE
+        WHEN account_created = last_login THEN "Inactive"
+        Else "Active"
+    END as Activity
+FROM sales
+ORDER BY Activity;
+
+/* Number of times payment type is used */
+SELECT payment_type, COUNT(payment_type) as "Num of Times Used"
+FROM sales
+GROUP BY payment_type;
