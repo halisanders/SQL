@@ -71,10 +71,10 @@ FROM FebSales
 WHERE Product like '%headphone%'
 GROUP BY Product;
 
-#11 
+#11 What was the average amount spent per account in February?
 
 
-#12 
+#12 What was the average quantity of products purchased per account in February?
 
 
-#13 
+#13 Which product brought in the most revenue in January and how much revenue did it bring in total?
