@@ -64,4 +64,17 @@ WHERE location like '%NY%'
 GROUP BY location
 HAVING COUNT(orderID) > 3;
 
-#10 
+#10 How many of each type of headphone were sold in February?
+SELECT distinct Product
+, SUM(Quantity)
+FROM FebSales
+WHERE Product like '%headphone%'
+GROUP BY Product;
+
+#11 
+
+
+#12 
+
+
+#13 
