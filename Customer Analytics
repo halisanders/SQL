@@ -79,6 +79,10 @@ ON Feb.orderID = cus.order_id;
 --Results: 181.036...
 
 #12 What was the average quantity of products purchased per account in February?
-
+SELECT SUM(Quantity)/COUNT(cus.acctnum)
+FROM FebSales Feb
+LEFT JOIN customers cus
+ON FEB.orderid=cus.order_id;
+--Results: 1.068...
 
 #13 Which product brought in the most revenue in January and how much revenue did it bring in total?
