@@ -86,3 +86,10 @@ ON FEB.orderid=cus.order_id;
 --Results: 1.068...
 
 #13 Which product brought in the most revenue in January and how much revenue did it bring in total?
+SELECT distinct SUM(Quantity*price)
+, Product
+FROM JanSales
+GROUP BY Product
+ORDER BY SUM(Quantity*price) desc
+LIMIT 1;
+--Results: 399500  Mackbook Pro Laptop
