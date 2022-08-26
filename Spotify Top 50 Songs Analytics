@@ -26,7 +26,22 @@ time_signature integer NOT NULL
 
 -- Inserted the .csv info from Kaggle
 
-#1 What is the average danceability by artist and track? 
+#1 Calculate the average popularity for the artists in the table. Then, for every artist with an average popularity of 90 or above, show their name, average popularity, and label them as a “Top Star”. 
+WITH tempTable as (
+SELECT AVG(s.popularity) as average_popularity
+, s.artist_name
+FROM Spotifydata s
+GROUP BY s.artist_name
+)
+
+SELECT average_popularity
+, artist_name
+, 'Top Star' as tag
+FROM tempTable
+WHERE average_popularity >= 90;
+
+
+#2 What is the average danceability by artist and track? 
 SELECT AVG(danceability) as 'AVG Danceability'
 , track_name
 , artist_name
@@ -35,7 +50,7 @@ GROUP BY track_name, artist_name
 ORDER BY AVG(danceability) asc;
 
 
-#2 Who are the top 10 artists based on popularity? 
+#3 Who are the top 10 artists based on popularity? 
 SELECT popularity
 , artist_name
 , track_name
@@ -45,7 +60,7 @@ ORDER BY popularity desc
 LIMIT 10;
 
 
-#3 What artist released the longest song? 
+#4 What artist released the longest song? 
 SELECT duration_ms
 , artist_name
 , track_name
@@ -55,7 +70,7 @@ ORDER BY duration_ms desc
 LIMIT 1;
 --Result: 287120  Farruko  Pepas
 
-#4 What's the average duration in ms for the 10 most popular songs?
+#5 What's the average duration in ms for the 10 most popular songs?
 SELECT AVG(duration_ms) as 'AVG Duration in ms'
 , popularity
 , artist_name
@@ -66,7 +81,7 @@ ORDER BY popularity desc
 LIMIT 10;
 
 
-#5 Which song had the least amount of energy?
+#6 Which song had the least amount of energy?
 SELECT energy
 , artist_name
 , track_name
