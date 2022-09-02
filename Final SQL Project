@@ -89,7 +89,15 @@ ON g.GenreId = t.GenreId
 
 
 #13 Show the total sales made by each sales agent.
-
+SELECT e.FirstName || ' ' || e.LastName as SalesAgentName
+, ROUND(SUM(i.Total), 2) as 'Total Sales'
+FROM employees e
+JOIN customers cus
+ON cus.SupportRepId = e.EmployeeId
+JOIN invoices i
+ON i.CustomerId = cus.CustomerId
+WHERE e.Title = 'Sales Support Agent'
+GROUP BY SalesAgentName
 
 
 #14 Which sales agent made the most in sales in 2009?
